@@ -571,6 +571,11 @@ use Amon2::Web::Dispatcher::Lite;
 
 any '/' => sub {
     my ($c) = @_;
+
+    if ( my $keyword = $c->req->param('q') ) {
+        # debug pront for encode
+        warn $c->req->uri_with({page => 1});
+    }
     return $c->render('index.tt');
 };
 
