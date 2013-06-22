@@ -1,6 +1,7 @@
 package Amon2::Web::Request;
 use strict;
 use warnings;
+use utf8;
 use parent qw/Plack::Request/;
 use Encode ();
 use Carp ();
