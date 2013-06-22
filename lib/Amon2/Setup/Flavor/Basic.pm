@@ -59,6 +59,9 @@ sub write_templates {
 
 <h1 style="padding: 70px; text-align: center; font-size: 80px; line-height: 1; letter-spacing: -2px;">Hello, Amon2 world!</h1>
 
+<a href="[% uri_with() %]">uri_with()</a>: [% uri_with() %]<br>
+<a href="[% uri_with({}) %]">uri_with({})</a>: [% uri_with({}) %]<br>
+<a href="[% uri_with({page => 1}) %]">uri_with({page => 1})</a>: [% uri_with({page => 1}) %]<br>
 <hr />
 
 <style>
